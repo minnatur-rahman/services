@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png')}}">
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
     <link href="assets/css/chblue.css" rel="stylesheet" media="screen">
     <link href="assets/css/theme-responsive.css" rel="stylesheet" media="screen">
