@@ -119,8 +119,8 @@
                             <li><a href="servicesbycategory/18.html">Home Automation</a></li>
                         </ul>
                     </li>
-                    <li class="login-form"> <a href="index.php/register.html" title="Register">Register</a></li>
-                    <li class="login-form"> <a href="login.html" title="Login">Login</a></li>
+                    <li class="login-form"> <a href="{{ route('register') }}" title="Register">Register</a></li>
+                    <li class="login-form"> <a href="{{ route('login') }}" title="Login">Login</a></li>
                     <li class="search-bar">
                     </li>
                 </ul>
