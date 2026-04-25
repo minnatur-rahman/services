@@ -121,7 +121,20 @@
                     </li>
                     @if (Route::has('login'))
                      @auth
-                         
+                         @if (Auth::user()->usertype==='admin')
+                              <li class="login-form"> <a href="#" title="Register">My Account (Admin)</a>
+                                 <ul class="drop-down one-column hover-fade">
+                                    <li><a href="#">Dashboard</a></li>                        
+                                    <li><a href="#">Logout</a></li>
+                                 </ul>
+                              </li>
+
+                         @elseif (Auth::user()->usertype==='serviceprovider')
+                              Service provider link
+
+                         @else
+                             Coustomer Links
+                         @endif
                     
                         
                     @else
