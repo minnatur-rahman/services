@@ -119,10 +119,18 @@
                             <li><a href="servicesbycategory/18.html">Home Automation</a></li>
                         </ul>
                     </li>
-                    <li class="login-form"> <a href="{{ route('register') }}" title="Register">Register</a></li>
-                    <li class="login-form"> <a href="{{ route('login') }}" title="Login">Login</a></li>
-                    <li class="search-bar">
-                    </li>
+                    @if (Route::has('login'))
+                     @auth
+                         
+                    
+                        
+                    @else
+                          <li class="login-form"> <a href="{{ route('register') }}" title="Register">Register</a></li>
+                          <li class="login-form"> <a href="{{ route('login') }}" title="Login">Login</a></li>
+                     @endauth
+                    @endif
+                   
+                    <li class="search-bar"></li>
                 </ul>
             </nav>
         </header>
