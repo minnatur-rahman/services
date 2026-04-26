@@ -144,7 +144,10 @@
                                  </ul>
                               </li>
                          @endif
-                    
+                       <form id="logout-form" action="{{route('logout')}}" method="POST">
+                           @csrf
+
+                       </form>
                         
                     @else
                           <li class="login-form"> <a href="{{ route('register') }}" title="Register">Register</a></li>
